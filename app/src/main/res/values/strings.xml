@@ -1,0 +1,30 @@
+<resources>
+
+    <string name="app_name">TrabalhoFinalPDA1</string>
+    <string name="FINANCIAL_CONTROL">FINANCIAL CONTROL</string>
+    <string name="msg_1">Fields VALUE and DESCRIPTOIN are mandatory</string>
+    <string name="msg_2">Invalid end date.</string>
+    <string name="msg_3">All fields are mandatory else RECURRENCY that is optional.</string>
+    <string name="msg_4">Must enter the correct data.</string>
+    <string name="new_category_description">NEW CATEGORY DESCRIPTION</string>
+    <string name="add_new_category">ADD NEW CATEGORY</string>
+    <string name="total_balance">TOTAL BALANCE</string>
+    <string name="all">All</string>
+    <string name="period">Period</string>
+    <string name="debit">Debit</string>
+    <string name="credit">Credit</string>
+    <string name="category">Category</string>
+    <string name="dt_ini">Dt ini</string>
+    <string name="dd_mm_yyyy">DD/MM/YYYY</string>
+    <string name="dt_fim">Dt end</string>
+    <string name="serach">search</string>
+    <string name="new_account">NEW ACCOUNT</string>
+    <string name="account_name">ACCOUNT NAME</string>
+    <string name="first_transaction">FIRST TRANSACTION</string>
+    <string name="description">DESCRIPTION</string>
+    <string name="recurrent">RECURRENT</string>
+    <string name="creat_account">CREAT ACCOUNT</string>
+    <string name="launch_transaction">LAUNCH TRANSACTION</string>
+    <string name="see_more_transactions">SEE MORE TRANSACTIONS</string>
+
+</resources>

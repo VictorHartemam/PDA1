@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowTransactionsActivity"
+    android:orientation="vertical">
+
+    <!-- radiobuttons to choose the kind of query -->
+    <RadioGroup
+        android:id="@+id/radioGroupQuery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <RadioButton
+            android:id="@+id/radioButtonAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/all"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonPeriod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/period"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonDebit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/debit"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonCredit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/credit"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/category"/>
+    </RadioGroup>
+
+    <!-- choose period -->
+    <LinearLayout
+        android:id="@+id/linearLayoutPeriod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dt_ini"/>
+
+        <EditText
+            android:id="@+id/editTextDtIni"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:layout_weight="1"
+            android:hint="@string/dd_mm_yyyy"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dt_fim"/>
+
+        <EditText
+            android:id="@+id/editTextDtFim"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:layout_weight="1"
+            android:hint="@string/dd_mm_yyyy"/>
+
+    </LinearLayout>
+
+    <!-- choose category -->
+    <Spinner
+        android:id="@+id/spinnerCategoires"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <!-- search button -->
+    <Button
+        android:id="@+id/buttonSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/serach"
+        android:visibility="gone"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/recycler_view_item_transaction">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

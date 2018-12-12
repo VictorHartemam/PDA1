@@ -1,0 +1,28 @@
+<resources>
+
+    <string name="app_name">TrabalhoFinalPDA1</string>
+    <string name="FINANCIAL_CONTROL">CONTROLE FINANCEIRO</string>
+    <string name="msg_1">Campos VALOR e DESCRICAO sao mandatorios</string>
+    <string name="msg_2">Data fim invalida.</string>
+    <string name="msg_3">Todos os campos sao mandatorios, menos RECORRENCIA que é opcional.</string>
+    <string name="msg_4">Necessario entrar com valores corretos.</string>
+    <string name="new_category_description">DESCRICAO DA NOVA CATEGORIA</string>
+    <string name="add_new_category">ADD NOVA CATEGORIA</string>
+    <string name="total_balance">BALANCO TOTAL</string>
+    <string name="all">Todos</string>
+    <string name="period">Periodo</string>
+    <string name="debit">Debito</string>
+    <string name="credit">Credito</string>
+    <string name="category">Categoria</string>
+    <string name="dt_fim">Dt fim</string>
+    <string name="serach">busca</string>
+    <string name="new_account">NOVA CONTA</string>
+    <string name="account_name">NOME DA CONTA</string>
+    <string name="first_transaction">PRIMEIRA TRANSACAO</string>
+    <string name="description">DESCRICAO</string>
+    <string name="recurrent">RECORRENCIA</string>
+    <string name="creat_account">CRIAR CONTA</string>
+    <string name="launch_transaction">LANCAR TRANSACAO</string>
+    <string name="see_more_transactions">VER MAIS TRANSACOES</string>
+
+</resources>

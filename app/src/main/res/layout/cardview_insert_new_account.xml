@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="340dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp">
+
+    <!-- layout manager -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- simple textview to show the action that can be done from this card -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/new_account"
+            android:textAlignment="center"
+            android:textSize="26sp"
+            android:layout_gravity="center"
+
+            android:background="#e2f1f8"/>
+
+        <!-- input the name of the account -->
+        <EditText
+            android:id="@+id/editTextAccountName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/account_name"
+            android:textAlignment="center"
+            android:textSize="26dp"/>
+
+        <!-- the first transaction-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/first_transaction"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="#e2f1f8"/>
+
+        <!-- the nests views is to add a new transaction-->
+        <!-- textview to insert the new transaction value-->
+        <EditText
+            android:id="@+id/editTextAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="$"
+            android:inputType="numberSigned"
+            android:cursorVisible="false"/>
+
+        <!-- textview to input a description -->
+        <EditText
+            android:id="@+id/editTextTransactionDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/description"/>
+
+        <!-- choose a category -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/category" />
+
+            <Spinner
+                android:id="@+id/spinnerCategories"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="textEnd">
+            </Spinner>
+
+        </LinearLayout>
+
+        <!-- set recorrency -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <CheckBox
+                android:id="@+id/checkBoxrecorrency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/recurrent"
+                android:checked="false"/>
+
+            <EditText
+                android:id="@+id/editTextMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="MM"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/textViewBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/editTextYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="YYYY"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonCreateAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/creat_account" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
